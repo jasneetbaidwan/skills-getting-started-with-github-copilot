@@ -148,8 +148,8 @@ footer {
 }
 
 .participants-list {
-  list-style: disc inside;
-  padding-left: 18px;
+  list-style: none;
+  padding-left: 0;
   margin-top: 8px;
   max-height: 120px;
   overflow-y: auto;
@@ -157,6 +157,9 @@ footer {
 }
 
 .participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #eef3ff;
   color: #1a237e;
   padding: 6px 10px;
@@ -165,6 +168,20 @@ footer {
   font-size: 14px;
   line-height: 1.2;
   border: 1px solid rgba(26, 35, 126, 0.06);
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.remove-btn:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 .participants-list li.no-participants {
